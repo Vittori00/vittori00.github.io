@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Skills</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Lorenzo Vittori</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Curriculum vitae</a></li>
+				<li class="active"><a href="generic.html">Set of skills</a></li>
+
+			</ul>
+			<ul class="icons ">
+				<li><a href="https://www.instagram.com/lorenzo.vittori/" class="icon brands alt fa-instagram"><span
+							class="label">Instagram</span></a></li>
+				<li><a href="https://www.linkedin.com/in/lorenzo-vittori-29698332a/"
+						class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/Vittori00" class="icon brands alt fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Set of skills</h1>
+					<p>List of soft and hard skills acquired through academic and personal projects, studies, and
+						collaborative experiences.</p>
+				</header>
+
+				<h3>Engineering & Analytical Skills</h3>
+				<ul>
+					<li>Analytical Thinking: Decomposing complex systems (e.g., IR pipelines, MCTS engines) into modular
+						components.</li>
+					<li>Creativity and Innovation: Designing unique solutions in generative NLP, OCR pipelines, and
+						quantum tech analysis.</li>
+					<li>Stress Management: Consistent productivity in time-bound university and team projects.</li>
+					<li>Project Management: Practical experience in Agile/Scrum workflows (WatchParty, Smart IoT Farm).
+					</li>
+					<li>Technology Transfer Awareness: Understanding TRL stages and the gap between research and
+						commercialization (Quantum Interfaces).</li>
+				</ul>
+
+				<h3>Soft Skills</h3>
+				<ul>
+					<li>Teamwork: Collaborated on team-based software projects and co-authored research-oriented
+						implementations.</li>
+					<li>Problem Solving: Tackled domain-specific challenges in music classification, quantum optics, and
+						reinforcement learning.</li>
+					<li>Adaptability: Fast learner in unfamiliar frameworks (e.g., Gemini API, OCR integration).</li>
+					<li>Empathy: Contributed to group productivity and open-source communities with accessible
+						documentation.</li>
+					<li>Leadership: Led implementation cycles in full-stack applications and long-running experimental
+						pipelines.</li>
+				</ul>
+
+				<h3>Hard Skills by Domain</h3>
+
+				<h4>🧠 Artificial Intelligence & ML</h4>
+				<ul>
+					<li>Transfer learning (LoRA, MTL-LoRA) on LLaMA</li>
+					<li>Self-supervised and reinforcement learning (MCTS, TrueSkill)</li>
+					<li>Model evaluation: Perplexity, BLEU, accuracy, latency</li>
+				</ul>
+
+				<h4>🔍 Information Retrieval & NLP</h4>
+				<ul>
+					<li>DAAT/TAAT query processing optimization</li>
+					<li>Patent mining and keyword-based abstract parsing</li>
+					<li>NLP-driven recommendation and question answering</li>
+				</ul>
+
+				<h4>🌐 Web Development</h4>
+				<ul>
+					<li>MERN stack: MongoDB, Express, React, Node.js</li>
+					<li>API design (REST, JWT), user management</li>
+					<li>Responsive front-end interfaces, multi-database logic</li>
+				</ul>
+
+				<h4>📡 Embedded & IoT Systems</h4>
+				<ul>
+					<li>Sensor-actuator integration (Smart Farm project)</li>
+					<li>Data acquisition and edge ML</li>
+					<li>MQTT protocol and Raspberry Pi microcontroller setup</li>
+				</ul>
+
+				<h4>📊 Data Science & Visualization</h4>
+				<ul>
+					<li>Exploratory data analysis, matplotlib/seaborn</li>
+					<li>Scikit-learn, Pandas for prototyping models</li>
+					<li>Audio feature extraction (MFCCs, tempo, spectral centroids)</li>
+				</ul>
+
+				<h4>🧬 Quantum Technologies (Paper)</h4>
+				<ul>
+					<li>Photonics & quantum emitter fundamentals</li>
+					<li>Technology Readiness Level (TRL) analysis</li>
+					<li>Patent landscape and commercialization pipeline</li>
+				</ul>
+
+				<h3>Programming Languages</h3>
+				<ul>
+					<li>Python, Java, C/C++, Assembly</li>
+					<li>JavaScript (React, Node), SQL/MongoDB</li>
+				</ul>
+
+				<h3>Languages</h3>
+				<ul>
+					<li>Italian (native), English (fluent)</li>
+				</ul>
+			</section>
+
+
+		</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="3"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li>
+							<input type="button" value="Send Message" onclick="sendMail()" />
+						</li>
+					</ul>
+					<script>
+						function sendMail() {
+							var name = document.getElementById('name').value;
+							var email = document.getElementById('email').value;
+							var message = document.getElementById('message').value;
+							var subject = encodeURIComponent("Message from " + name);
+							var body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage:\n" + message);
+							window.location.href = "mailto:lorenzo.vittori24@gmail.com?subject=" + subject + "&body=" + body;
+						}
+					</script>
+				</form>
+			</section>
+			<section class="split contact">
+				<section class="alt">
+					<h3>Address</h3>
+					<p>Via Carlo Minciotti 5<br />
+						Viterbo, 01100</p>
+				</section>
+				<section>
+					<h3>Phone</h3>
+					<p><a href="#">(+39) 340 863 9363</a></p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a href="#">lorenzo.vittori24@gmail.com</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.instagram.com/lorenzo.vittori/"
+								class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/lorenzo-vittori-29698332a/"
+								class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Vittori00" class="icon brands alt fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<section>
+				<h3> <a href="https://html5up.net/license">Download here the Curriculum Vitae (pdf)</a> </p>
+				</h3>
+
+			</section>
+			<ul>
+				<li>&copy; Lorenzo Vittori CV</li>
+				<li>Design: <a href="CV.pdf">Massive</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
